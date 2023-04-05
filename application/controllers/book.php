@@ -63,12 +63,16 @@ class Book extends CI_Controller
 
     // Función para editar Libro
     public function update_book() {
-        echo "update_book()";
+
+        echo $_GET['id'];
+
     }
 
     // Función para eliminar Libro
     public function delete_book() {
-        echo "delete_book()";
+        $data = $_GET['id'];
+        $this->Book_model->delete_book($data);
+        $this->load->view('add_book_view');
     }
 
 

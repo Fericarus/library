@@ -32,7 +32,9 @@ class Book_model extends CI_Model {
 
 
     // Función para eliminar Libro
-
+    public function delete_book($data) {
+        $this->db->query("DELETE FROM books WHERE id_book=" . $data);
+    }
 
 
 
