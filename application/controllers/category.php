@@ -41,6 +41,12 @@ class Category extends CI_Controller {
 
     }
 
+    // Función para obtener categoria
+    public function get_category() {
+        $data['categories'] = $this->Category_model->get_category();
+        $this->load->view('get_categories_view', $data);
+    }
+
 
 
 

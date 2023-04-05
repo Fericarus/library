@@ -11,11 +11,11 @@ class Category_model extends CI_Model {
         $this->db->insert('categories', $data);
     }
 
-
-
-
-
-    // Función para obtener categoría
+    // Función para obtener Libro
+    public function get_category() {
+        $query = $this->db->query("SELECT * FROM categories");
+        return $query->result_array();
+    }
 
 
 
