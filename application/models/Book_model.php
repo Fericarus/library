@@ -19,12 +19,17 @@ class Book_model extends CI_Model {
         return $query->result_array();
     }
 
-
-
-
-
     // Función para actualizar Libro
-
+    public function update_book($data) {
+        $data = array(
+            'name' => $data['name'],
+            'author' => $data['author'],
+            'id_category1' => $data['id_category1'],
+            'published_date' => $data['published_date']
+        );
+        $this->db->where("id_book", $data['id_book']);
+        $this->db->insert('books', $data);
+    }
 
 
 
