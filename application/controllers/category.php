@@ -52,9 +52,11 @@ class Category extends CI_Controller {
         echo "update_category()";
     }
 
-    // Función para eliminar category
+    // Función para eliminar Libro
     public function delete_category() {
-        echo "delete_category()";
+        $data = $_GET['id'];
+        $this->Category_model->delete_category($data);
+        $this->load->view('add_category_view');
     }
 
 
