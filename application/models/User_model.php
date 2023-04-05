@@ -8,7 +8,7 @@ class User_model extends CI_Model {
             'name_user' => $data['name_user'],
             'email' => $data['email']
         );
-        $this->db->insert('categories', $data);
+        $this->db->insert('users', $data);
     }
 
 
