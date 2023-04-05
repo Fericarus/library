@@ -46,45 +46,25 @@
 </html>
 
 <script>
-    function validarNombre(id) {
+    function validarNameCategory(id) {
         var nombre = document.getElementById(id).value;
-        var errorMessageNombre = document.getElementById("errorMessageNombre");
+        var errorMessageNameCategory = document.getElementById("errorMessageNameCategory");
         var Pattern = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
 
         // Validamos contra la expresión regular
         if (!Pattern.test(nombre)) {
-            errorMessageNombre.innerHTML = "Please enter only letters and spaces in the name field.";
-            errorMessageNombre.style.color = "red";
-            errorMessageNombre.style.display = "inline";
-            errorMessageNombre.style.padding = ".5rem";
-            errorMessageNombre.style.paddingLeft = ".5rem";
-            errorMessageNombre.style.marginBottom = ".2rem";
+            errorMessageNameCategory.innerHTML = "Please enter only letters and spaces in the name field.";
+            errorMessageNameCategory.style.color = "red";
+            errorMessageNameCategory.style.display = "inline";
+            errorMessageNameCategory.style.padding = ".5rem";
+            errorMessageNameCategory.style.paddingLeft = ".5rem";
+            errorMessageNameCategory.style.marginBottom = ".2rem";
             return false;
         } else {
-            errorMessageNombre.innerHTML = "";
-            errorMessageNombre.style.display = "none";
+            errorMessageNameCategory.innerHTML = "";
+            errorMessageNameCategory.style.display = "none";
             return true;
         }
     }
 
-    function validarAutor(id) {
-        var autor = document.getElementById(id).value;
-        var errorMessageNombre = document.getElementById("errorMessageNombre");
-        var Pattern = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
-
-        // Validamos contra la expresión regular
-        if (!Pattern.test(autor)) {
-            errorMessageAutor.innerHTML = "Please enter only letters and spaces in the author field..";
-            errorMessageAutor.style.color = "red";
-            errorMessageAutor.style.display = "inline";
-            errorMessageAutor.style.padding = ".5rem";
-            errorMessageAutor.style.paddingLeft = ".5rem";
-            errorMessageAutor.style.marginBottom = ".2rem";
-            return false;
-        } else {
-            errorMessageAutor.innerHTML = "";
-            errorMessageAutor.style.display = "none";
-            return true;
-        }
-    }
 </script>

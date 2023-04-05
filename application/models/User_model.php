@@ -3,6 +3,13 @@
 class User_model extends CI_Model {
 
      // Función para insertar usuario
+     public function add_user($data) {
+        $data = array(
+            'name_user' => $data['name_user'],
+            'email' => $data['email']
+        );
+        $this->db->insert('categories', $data);
+    }
 
 
 

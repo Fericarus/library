@@ -28,9 +28,9 @@ class Category extends CI_Controller {
             $data['description'] = $_POST['description'];
         }
 
-        echo "<pre>";
-        var_dump($data);
-        echo "</pre>";
+        // echo "<pre>";
+        // var_dump($data);
+        // echo "</pre>";
 
         $this->Category_model->add_category($data);
         $this->load->view('add_category_view');
