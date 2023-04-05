@@ -31,8 +31,8 @@ class Category_model extends CI_Model {
 
 
     // Función para eliminar Libro
-    public function delete_book($data) {
-        $this->db->query("DELETE FROM books WHERE id_book=" . $data);
+    public function delete_category($data) {
+        $this->db->query("DELETE FROM categories WHERE id_category=" . $data);
     }
 
 
