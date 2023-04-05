@@ -8,7 +8,7 @@ class Category extends CI_Controller {
         echo "Hi Category controller!";
     }
 
-    // Función para insertar Libro
+    // Función para insertar category
     public function add_category() {
 
         // Definimos $data
