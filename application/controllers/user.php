@@ -54,7 +54,9 @@ class User extends CI_Controller
 
     // Función para eliminar category
     public function delete_user() {
-        echo "delete_user()";
+        $data = $_GET['id'];
+        $this->User_model->delete_user($data);
+        $this->load->view('add_user_view');
     }
 
 
