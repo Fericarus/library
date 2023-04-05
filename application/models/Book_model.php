@@ -14,7 +14,10 @@ class Book_model extends CI_Model {
     }
 
     // Función para obtener Libro
-
+    public function get_book() {
+        $query = $this->db->query("SELECT * FROM books");
+        return $query->result_array();
+    }
 
 
 
