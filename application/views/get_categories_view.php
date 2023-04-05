@@ -24,8 +24,8 @@
                 <tr style="display:grid; grid-template-columns: repeat(4, 1fr)">
                     <td style="text-align:center"><?php echo $category['name_category'] ?></td><br>
                     <td style="text-align:center"><?php echo $category['description'] ?></td>
-                    <td><a href="../category/update_category">Edit category</a></td>
-                    <td><a href="../category/delete_category">Delete category</a></td>
+                    <td><a href="../category/update_category?id=<?php echo $category['id_category'] ?>">Edit book</a></td>
+                    <td><a href="../category/delete_category?id=<?php echo $category['id_category'] ?>">Delete book</a></td>
                 </tr>
             <?php endforeach ?>
         </tbody>
