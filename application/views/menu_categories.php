@@ -19,7 +19,7 @@
         <div class="main_container">
 
             <ul>
-                <li><a href="#">Add category</a></li>
+                <li><a href="../category/show_add_category">Add category</a></li>
                 <li><a href="#">See categories</a></li>
                 <li><a href="#">Update category</a></li>
                 <li><a href="#">Delete category</a></li>

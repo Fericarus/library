@@ -18,7 +18,7 @@
 
         <div class="main_container">
 
-            <form action="" method="POST">
+            <form action="../user/add_user" method="POST">
 
                 <!-- Campo name_user -->
                 <div class="campo">
@@ -39,6 +39,9 @@
             </form>
 
         </div>
+
+        <br><br>
+        <a href="../inicio">Back Home</a>
 
     </div>
 

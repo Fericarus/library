@@ -18,7 +18,7 @@
 
         <div class="main_container">
 
-            <form action="" method="POST">
+            <form action="../category/add_category" method="POST">
 
                 <!-- Campo name_category -->
                 <div class="campo">
@@ -38,6 +38,9 @@
             </form>
 
         </div>
+
+        <br><br>
+        <a href="../inicio">Back Home</a>
 
     </div>
 

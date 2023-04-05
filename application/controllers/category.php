@@ -8,6 +8,10 @@ class Category extends CI_Controller {
         echo "Hi Category controller!";
     }
 
+    public function show_add_category() {
+        $this->load->view('add_category_view');
+    }
+
     // Función para insertar category
     public function add_category() {
 

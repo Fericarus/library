@@ -10,6 +10,10 @@ class User extends CI_Controller
         echo "Hi User controller!";
     }
 
+    public function show_add_user() {
+        $this->load->view('add_user_view');
+    }
+
     // Función para insertar user
     public function add_user()
     {
