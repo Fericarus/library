@@ -40,4 +40,12 @@ class User extends CI_Controller
         $this->load->view('add_user_view');
 
     }
+
+    // Función para obtener Libro
+    public function get_user() {
+        $data['users'] = $this->User_model->get_user();
+        $this->load->view('get_users_view', $data);
+    }
+
+
 }
