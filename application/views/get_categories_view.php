@@ -25,7 +25,7 @@
                     <td style="text-align:center"><?php echo $category['name_category'] ?></td><br>
                     <td style="text-align:center"><?php echo $category['description'] ?></td>
                     <td><a href="../category/update_category?id=<?php echo $category['id_category'] ?>">Edit category</a></td>
-                    <td><a href="../category/delete_category?id=<?php echo $category['id_category'] ?>">Delete category</a></td>
+                    <td><a href="../category/delete_category?id=<?php echo $category['id_category'] ?>">Delete </a></td>
                 </tr>
             <?php endforeach ?>
         </tbody>
