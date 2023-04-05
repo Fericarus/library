@@ -3,19 +3,15 @@
 class Book_model extends CI_Model {
 
     // Función para insertar Libro
-    public function add_book() {
+    public function add_book($data) {
         $data = array(
-            'name' => 'The Lord of the Rings',
-            'author' => 'Fernando Arriola',
-            'id_category1' => 1,
-            'published_date' => '2013/04/04'
+            'name' => $data['name'],
+            'author' => $data['author'],
+            'id_category1' => $data['id_category1'],
+            'published_date' => $data['published_date']
         );
         $this->db->insert('books', $data);
     }
-
-
-
-
 
     // Función para obtener Libro
 
