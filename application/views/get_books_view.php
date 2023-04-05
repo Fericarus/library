@@ -35,6 +35,9 @@
         </tbody>
     </table>
 
+    <br><br>
+    <a href="../inicio">Back Home</a>
+
 
 </body>
 
