@@ -5,8 +5,7 @@ class Book extends CI_Controller
 {
 
     // Función de prueba
-    public function index()
-    {
+    public function index() {
         echo "hola Books controller";
     }
 

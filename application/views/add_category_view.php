@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library - Add book</title>
+    <title>Library - Add category</title>
 </head>
 
 <body>
@@ -13,54 +13,27 @@
     <div class="container">
 
         <div class="title_container">
-            <h1>Add book</h1>
+            <h1>Add Category</h1>
         </div>
 
         <div class="main_container">
 
             <form action="" method="POST">
 
-                <!-- Campo name -->
+                <!-- Campo name_category -->
                 <div class="campo">
-                    <label>Name: </label>
-                    <input id="name" name="name" placeholder="Book's name" oninput="validarNombre(this.id)" required />
-                    <span id="errorMessageNombre" style="display: none;"></span>
+                    <label>Categrory name: </label>
+                    <input id="name_category" name="name_category" placeholder="Category's name" oninput="validarNameCategory(this.id)" required />
+                    <span id="errorMessageNameCategory" style="display: none;"></span>
                 </div>
 
                 <!-- Campo author -->
                 <div class="campo">
-                    <label>Author: </label>
-                    <input id="author" name="author" placeholder="Author's name" oninput="validarAutor(this.id)" required>
-                    <span id="errorMessageAutor" style="display: none;"></span>
+                    <label>Category description: </label>
+                    <input id="description" name="description" placeholder="Write the description of the category" required>
                 </div>
 
-                <!-- Campo Category -->
-                <div class="campo">
-                    <label>Category: </label>
-                    <!-- <input type="text" name="id_category1" placeholder="Book category"> -->
-                    <select name="id_category1" required>
-                        <option value="">Select a category</option>
-                        <option value="1">Adventure</option>
-                        <option value="2">Romance</option>
-                        <option value="3">Science fiction</option>
-                        <option value="4">Biographies</option>
-                        <option value="5">Mistery</option>
-                        <option value="6">Fantasy</option>
-                        <option value="7">Business</option>
-                        <option value="8">History</option>
-                        <option value="9">Policy</option>
-                        <option value="10">Self help</option>
-                    </select>
-
-                </div>
-
-                <!-- Campo Published date -->
-                <div class="campo">
-                    <label>Published date: </label>
-                    <input type="text" name="published_date" placeholder="YYY-MM-DD" required>
-                </div>
-
-                <input type="submit" value="Save_book" name="submit">
+                <input type="submit" value="Save description" name="submit">
 
             </form>
 
