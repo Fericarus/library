@@ -11,12 +11,11 @@ class User_model extends CI_Model {
         $this->db->insert('users', $data);
     }
 
-
-
-
-
-
-    // Función para obtener usuario
+    // Función para obtener Libro
+    public function get_user() {
+        $query = $this->db->query("SELECT * FROM users");
+        return $query->result_array();
+    }
 
 
 
