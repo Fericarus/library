@@ -7,8 +7,17 @@ class Inicio extends CI_Controller {
         $this->load->view('inicio');
     }
 
+    // Redirigir a Menu libros
     public function inicio_books() {
-        $this->load->view('inicio_books');
+        $this->load->view('menu_books');
+    }
+
+    public function inicio_users() {
+        $this->load->view('menu_users');
+    }
+
+    public function inicio_categories() {
+        $this->load->view('menu_categories');
     }
 
 }
