@@ -47,5 +47,15 @@ class User extends CI_Controller
         $this->load->view('get_users_view', $data);
     }
 
+    // Función para editar user
+    public function update_user() {
+        echo "update_user()";
+    }
+
+    // Función para eliminar category
+    public function delete_user() {
+        echo "delete_user()";
+    }
+
 
 }

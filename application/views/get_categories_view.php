@@ -14,16 +14,18 @@
 
     <table>
         <thead>
-            <tr style="display:grid; grid-template-columns: repeat(2, 1fr)">
+            <tr style="display:grid; grid-template-columns: repeat(4, 1fr)">
                 <th>Name category</th>
                 <th>Description</th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($categories as $category) : ?>
-                <tr style="display:grid; grid-template-columns: repeat(2, 1fr)">
+                <tr style="display:grid; grid-template-columns: repeat(4, 1fr)">
                     <td style="text-align:center"><?php echo $category['name_category'] ?></td><br>
                     <td style="text-align:center"><?php echo $category['description'] ?></td>
+                    <td><a href="../category/update_category">Edit category</a></td>
+                    <td><a href="../category/delete_category">Delete category</a></td>
                 </tr>
             <?php endforeach ?>
         </tbody>

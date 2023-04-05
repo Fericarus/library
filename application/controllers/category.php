@@ -47,6 +47,16 @@ class Category extends CI_Controller {
         $this->load->view('get_categories_view', $data);
     }
 
+    // Función para editar categoria
+    public function update_category() {
+        echo "update_category()";
+    }
+
+    // Función para eliminar category
+    public function delete_category() {
+        echo "delete_category()";
+    }
+
 
 
 

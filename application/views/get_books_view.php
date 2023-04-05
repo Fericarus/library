@@ -14,7 +14,7 @@
 
     <table>
         <thead>
-            <tr style="display:grid; grid-template-columns: repeat(5, 1fr)">
+            <tr style="display:grid; grid-template-columns: repeat(7, 1fr)">
                 <th>Name</th>
                 <th>Author</th>
                 <th>ID Category</th>
@@ -24,16 +24,20 @@
         </thead>
         <tbody>
             <?php foreach ($books as $book) : ?>
-                <tr style="display:grid; grid-template-columns: repeat(5, 1fr)">
-                    <td style="text-align:center"><?php echo $book['name'] ?></td><br>
+                <tr style="display:grid; grid-template-columns: repeat(7, 1fr)">
+                    <td style="text-align:center"><?php echo $book['name'] ?></td>
                     <td style="text-align:center"><?php echo $book['author'] ?></td>
                     <td style="text-align:center"><?php echo $book['id_category1'] ?></td>
                     <td style="text-align:center"><?php echo $book['published_date'] ?></td>
                     <td style="text-align:center"><?php echo $book['id_user1'] ?></td>
+                    <td><a href="../book/update_book">Edit book</a></td>
+                    <td><a href="../book/delete_book">Delete book</a></td>
                 </tr>
             <?php endforeach ?>
+            
         </tbody>
     </table>
+    
 
     <br><br>
     <a href="../inicio">Back Home</a>
