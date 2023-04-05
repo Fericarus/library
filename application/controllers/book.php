@@ -54,4 +54,12 @@ class Book extends CI_Controller
         $this->Book_model->add_book($data);
         $this->load->view('add_book_view');
     }
+
+    // Función para obtener Libro
+    public function get_book() {
+        $data['books'] = $this->Book_model->get_book();
+        $this->load->view('get_books_view', $data);
+    }
+
+
 }
