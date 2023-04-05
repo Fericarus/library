@@ -131,6 +131,5 @@ $autoload['language'] = array();
 | in the controller:
 |
 |	$autoload['model'] = array('first_model' => 'first');
-'Book_model', 'Category_model', 'User_model'
 */
-$autoload['model'] = array();
+$autoload['model'] = array('Book_model', 'Category_model', 'User_model');
