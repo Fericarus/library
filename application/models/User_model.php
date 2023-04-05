@@ -30,7 +30,10 @@ class User_model extends CI_Model {
 
 
 
-    // Función para eliminar usuario
+    // Función para eliminar Libro
+    public function delete_user($data) {
+        $this->db->query("DELETE FROM users WHERE id_user=" . $data);
+    }
 
 
 
