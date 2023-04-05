@@ -9,6 +9,10 @@ class Book extends CI_Controller
         echo "hola Books controller";
     }
 
+    public function show_add_book() {
+        $this->load->view('add_book_view');
+    }
+
     // Función para insertar Libro
     public function add_book() {
 
@@ -44,7 +48,7 @@ class Book extends CI_Controller
         }
 
         // echo "<pre>";
-        // var_dump($data);
+        // var_dump($_POST);
         // echo "</pre>";
 
         $this->Book_model->add_book($data);

@@ -18,7 +18,7 @@
 
         <div class="main_container">
 
-            <form action="" method="POST">
+            <form action="../book/add_book" method="POST">
 
                 <!-- Campo name -->
                 <div class="campo">
@@ -65,6 +65,9 @@
             </form>
 
         </div>
+
+        <br><br>
+        <a href="../inicio">Back Home</a>
 
     </div>
 
