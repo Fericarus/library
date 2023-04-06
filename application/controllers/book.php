@@ -113,6 +113,10 @@ class Book extends CI_Controller
     //     $this->load->view('update_book_view');
     // }
 
+    public function update_book() {
+        echo "update_book()";
+    }
+
     // Función para eliminar Libro
     public function delete_book()
     {
