@@ -21,8 +21,6 @@
             <ul>
                 <li><a href="../book/show_add_book">Add book</a></li>
                 <li><a href="../book/get_book">See books</a></li>
-                <li><a href="#">Update book</a></li>
-                <li><a href="#">Delete book</a></li>
             </ul>
 
         </div>

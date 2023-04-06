@@ -21,8 +21,6 @@
             <ul>
                 <li><a href="../user/show_add_user">Add user</a></li>
                 <li><a href="../user/get_user">See users</a></li>
-                <li><a href="#">Update user</a></li>
-                <li><a href="#">Delete user</a></li>
             </ul>
 
         </div>

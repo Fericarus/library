@@ -30,7 +30,7 @@
                     <td style="text-align:center"><?php echo $book['id_category1'] ?></td>
                     <td style="text-align:center"><?php echo $book['published_date'] ?></td>
                     <td style="text-align:center"><?php echo $book['id_user1'] ?></td>
-                    <td><a href="../book/update_book?id=<?php echo $book['id_book'] ?>">Edit book</a></td>
+                    <td><a href="../book/show_update_book?id=<?php echo $book['id_book'] ?>">Edit book</a></td>
                     <td><a href="../book/delete_book?id=<?php echo $book['id_book'] ?>">Delete book</a></td>
                 </tr>
             <?php endforeach ?>

@@ -21,8 +21,6 @@
             <ul>
                 <li><a href="../category/show_add_category">Add category</a></li>
                 <li><a href="../category/get_category">See categories</a></li>
-                <li><a href="#">Update category</a></li>
-                <li><a href="#">Delete category</a></li>
             </ul>
 
         </div>
